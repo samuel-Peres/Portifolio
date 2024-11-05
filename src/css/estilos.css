@@ -61,27 +61,39 @@ body{
 .home .iformacoes{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     letter-spacing: 2px;
-    padding: 0 15px;
-    max-width: 50%;
+    padding: 10 20px;
+    max-width: 100%;
     text-align: center;
     align-items: center;
 }
 
 .home .iformacoes h1{
     font-family: "Raleway", sans-serif;
-    font-size: 45px;
+    font-size: 28px;
     margin-bottom: 20px;
     gap: 2px;
+    overflow: hidden; /* Oculta o texto que excede a largura */
+    white-space: nowrap; /* Impede que o texto quebre a linha */
+    border-right: .15em solid #ffffff;
+   animation: typing 9s steps(50) infinite; 
 }
 
-  
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 
 .home .iformacoes p{
     font-family: "Raleway", sans-serif;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
 .home .redes-sociais{

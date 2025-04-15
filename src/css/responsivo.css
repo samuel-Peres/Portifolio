@@ -41,3 +41,62 @@
         padding: 30px;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .home .iformacoes h1{
+      font-size: 17px;
+    }
+    .home .iformacoes p{
+      font-size: 13px;
+    }
+  
+    .home .content-foto .foto{
+      width: 250px;
+      height: 250px;
+    }
+  
+  }
+
+  
+@media (max-width: 768px) {
+    .wrapper{
+        padding: 20px 0px;
+    }
+
+    .inner {
+      --w: 160px;
+      --h: 120px;
+    }
+  
+    .card {
+      width: 160px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .inner {
+      --w: 120px;
+      --h: 100px;
+    }
+  
+    .card {
+      width: 120px;
+      height: 200px;
+    }
+  
+    .projetos .titulo {
+      font-size: 1.8rem;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .prev,
+    .next {
+      bottom: 5px;
+    }
+  }
+

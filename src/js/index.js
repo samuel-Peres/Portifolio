@@ -1,15 +1,6 @@
-const botaoMostraProjetos = document.querySelector(".btn-msotra-projetos");
-const projetosInativos= document.querySelectorAll('.projeto:not(.ativo)');
-
-botaoMostraProjetos.addEventListener('click', () => {
-    mostraMaisProjetos();
-    esconderBotao();
-});
-function esconderBotao() {
-    botaoMostraProjetos.classList.add('remover');
-}
-function mostraMaisProjetos() {
-    projetosInativos.forEach(projetoInativo => {
-        projetoInativo.classList.add('ativo');
-    });
+let angle = 0;
+function rotateCarousel(direction) {
+    angle += direction * (360 / 20); // 10 é o número de cartões
+    document.querySelector(".inner").style.transform = 
+        `perspective(1000px) rotateX(0deg) rotateY(${angle}deg)`;
 }

@@ -326,6 +326,32 @@ body{
   border-radius: 12px;
 }
 
+
+.informacoes-projeto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* fundo semi-transparente */
+  color: #fff;
+  padding: 20px;
+  font-size: 0.9rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(20px);
+  overflow-y: auto;
+  border-radius: 0 0 12px 12px;
+}
+
+.img:hover .informacoes-projeto {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
 button {
   position: absolute;
   bottom: 20px;

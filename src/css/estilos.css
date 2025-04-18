@@ -289,6 +289,7 @@ body{
   justify-content: center;
   overflow: hidden;
   padding: 0;
+  
 }
 
 .inner {
@@ -297,7 +298,6 @@ body{
   --translateZ: calc(var(--w) + var(--h));
   --rotateX: -10deg;
   --perspective: 1000px;
-
   position: relative;
   width: var(--w);
   height: var(--h);
@@ -333,16 +333,31 @@ body{
   left: 0;
   width: 100%;
   max-height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* fundo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.678); /* fundo semi-transparente */
   color: #fff;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 30px;
+  font-size: 11px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease, transform 0.4s ease;
   transform: translateY(20px);
   overflow-y: auto;
   border-radius: 0 0 12px 12px;
+  text-align: justify;
+}
+
+.informacoes-projeto {
+  scrollbar-width: thin;
+  scrollbar-color: #03dfd4 transparent;
+}
+
+.informacoes-projeto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.informacoes-projeto::-webkit-scrollbar-thumb {
+  background-color: #03dfd4;
+  border-radius: 3px;
 }
 
 .img:hover .informacoes-projeto {

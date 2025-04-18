@@ -60,7 +60,7 @@
   
 @media (max-width: 768px) {
     .wrapper{
-        padding: 50px 0px;
+        padding: 0px 0px;
     }
 
     .inner {
@@ -76,7 +76,7 @@
   
   @media (max-width: 480px) {
     .inner {
-      --w: 120px;
+      --w: 180px;
       --h: 100px;
     }
   

@@ -292,7 +292,7 @@ body{
 }
 
 .inner {
-  --w: 220px;
+  --w: 200px;
   --h: 150px;
   --translateZ: calc(var(--w) + var(--h));
   --rotateX: -10deg;
